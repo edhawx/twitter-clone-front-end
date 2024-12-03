@@ -4,19 +4,19 @@
 }
 
 .main-container {
-  display: flex; /* Ensures navbar and content are side-by-side */
-  margin: 20px auto; /* Centers the main container */
-  width: 80%; /* Adjust container width */
-  max-width: 800px; /* Add a maximum width for better readability */
+  display: flex; 
+  margin: 20px auto;
+  width: 80%; 
+  max-width: 800px;
 }
 
 .main-content {
-  margin-left: 20px; /* Space between the navbar and the content */
-  flex-grow: 1; /* Allow the main content to fill available space */
+  margin-left: 20px; 
+  flex-grow: 1; 
 }
 
 .tweet-list {
-  margin-top: 20px; /* Adds spacing above the list */
+  margin-top: 20px; 
 }
 
 .tweet {

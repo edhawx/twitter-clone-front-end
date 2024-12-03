@@ -9,17 +9,19 @@ interface Tweet {
   content: string;
   username: string;
   timestamp: string;
+  image?: File;
 }
 
 const App: React.FC = () => {
   const [tweets, setTweets] = useState<Tweet[]>([]);
 
-  const addTweet = (content: string) => {
+  const addTweet = (content: string, image?: File) => {
     const newTweet: Tweet = {
       id: tweets.length + 1,
       content,
       username: 'CurrentUser',
       timestamp: new Date().toISOString(),
+      image,
     };
     setTweets([newTweet, ...tweets]);
   };
