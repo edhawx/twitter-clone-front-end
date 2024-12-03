@@ -1,0 +1,69 @@
+.image-uploader {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .image-input {
+    margin-bottom: 10px;
+  }
+
+  .image-preview-container {
+    position: relative; /* Ensures child elements are positioned relative to the image */
+    display: inline-block;
+  }
+  
+  .image-preview {
+    align-items: center;
+    max-width: 500px;
+    max-height: 300px; 
+    width: auto; 
+    height: auto;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    object-fit: contain; 
+  }
+
+  .remove-image-overlay {
+    position: absolute;
+    top: 5px; /* Position near the top right corner */
+    right: 5px; /* Position near the top right corner */
+    width: 20px; /* Size of the red square */
+    height: 20px;
+    background-color: #ff4d4d; /* Red background */
+    color: white; /* White 'X' */
+    border: none;
+    border-radius: 50%; /* Circle button */
+    font-size: 14px; /* Smaller 'X' */
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .remove-image-overlay:hover {
+    background-color: #d63333; /* Darker red on hover */
+  }
+
+  .custom-file-label {
+    display: block;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .custom-file-label:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .image-input {
+    display: none; /* Hide the default file input */
+  }

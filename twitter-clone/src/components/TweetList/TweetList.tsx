@@ -6,6 +6,7 @@ interface TweetData {
     content: string;
     username: string;
     timestamp: string;
+    image?: File;
 }
 
 interface TweetListProps {
@@ -21,6 +22,7 @@ const TweetList: React.FC<TweetListProps> = ({ tweets }) => {
                 content={tweet.content}
                 username={tweet.username}
                 timestamp={tweet.timestamp}
+                image={tweet.image}
                 />
             ))}
         </div>
