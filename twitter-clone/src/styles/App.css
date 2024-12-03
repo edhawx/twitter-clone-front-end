@@ -1,0 +1,56 @@
+.App {
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+.main-container {
+  display: flex; /* Ensures navbar and content are side-by-side */
+  margin: 20px auto; /* Centers the main container */
+  width: 80%; /* Adjust container width */
+  max-width: 800px; /* Add a maximum width for better readability */
+}
+
+.main-content {
+  margin-left: 20px; /* Space between the navbar and the content */
+  flex-grow: 1; /* Allow the main content to fill available space */
+}
+
+.tweet-list {
+  margin-top: 20px; /* Adds spacing above the list */
+}
+
+.tweet {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.new-tweet-form {
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: left;
+}
+
+.new-tweet-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+.new-tweet-button {
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.new-tweet-button:hover {
+  background-color: #005fa3;
+}
